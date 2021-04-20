@@ -61,10 +61,10 @@ You might think this is much, but we are just scraping the surface.
 
 # What are databases?
 
-As you delve into the depths of programming, you will come across times when you realize that it would be a lot more
-convenient for both the user, and the developer to store data in tables like you see in spreadsheets instead of creating
+As you delve into the depths of programming, you will, sooner or later, find yourself in situations where you realize that it would be a lot more
+convenient for both the user and the developer to store data in tables like you see in spreadsheets instead of creating
 all sorts of wrapper objects, hashmaps of hashmaps and so on. This is where databases come in handy.\
-SQL databases are designed to store structural data effectively. They do this by storing data in tables like this:
+SQL databases are designed to store structured data effectively. They do this by storing data in tables like this:
 
 | uuid | coins |
 | :--- | :--- |
@@ -74,16 +74,15 @@ SQL databases are designed to store structural data effectively. They do this by
 | 3f7141c7-5355-4244-b70c-79034c365db5 | 54 |
 | 5395581d-fc92-470b-9de8-90e5ef415b2c | 85 |
 
-Looking at the image, I think you might be seeing how this comes in handy. Data is stored neatly as entries or rows of
-data. Each kind of data is classified under each column.\
-The data is structured in columns. Why am I always say that the data is structured? Because there is unstructured data
-as well. That's something where you would use so called noSQL database, although the term "noSQL" is a bit misleading,
-since it is a very broad field, but that's something for another time.
+Data is stored neatly as rows of smaller pieces of data, where each row is considered a separate **entry**.
+The data is structured in columns. Why do I keep stressing that the data is **structured**? Because there is unstructured data
+as well, meaning you cannot determine the columns it will need in advance.
+That would be one use case for so-called "noSQL" databases, although the term "noSQL" is a bit misleading, but that's something for another time.
 
-Since the data is structured SQL databases can do lot more than just storing data. They can define rules for values in a
-column or even validate combination of columns. They can also link columns in different tables together and delete
-dropped rows when the linked row is deleted. This is also a great way to keep data consistency, but we are already going
-into the topic without clarifying some things. Let's get started with some prerequisites.
+Since the data is structured SQL databases can do lot more than storing data. They can define rules for values in a
+column or even validate combinations of columns. They can also link different tables together via special columns and delete
+rows when the linked row is deleted. This is a great way to maintain data consistentency. But it is too soon to go in that deep;
+let's take a couple steps back and get started with some prerequisites.
 
 # Prerequisite
 
